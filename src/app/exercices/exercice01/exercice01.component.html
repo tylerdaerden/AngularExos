@@ -1,0 +1,34 @@
+<H3>Exercice 01 - Créer son profil</H3>
+
+<p>Vous devez créer une application Angular pour permettre aux utilisateurs de créer leur propre profil personnel.</p>
+
+<p>L'application doit contenir les champs suivants :</p>
+
+<ul>
+<li>Nom complet</li>
+<li>Adresse e-mail</li>
+<li>Date de naissance</li>
+<li>Genre</li>
+<li>Langues parlées</li>
+<li>Image de profil (optionnelle)</li>
+</ul>
+
+<hr>
+
+
+<h1>{{ Gender === 'homme' ? 'Mr.' : 'Mme.' }}   {{ LastName }} {{ FirstName }}</h1> 
+
+<p> Contactez moi à {{ MailAdress }}</p>
+<p> Ne le {{ BirthDate.toLocaleDateString('fr-FR',{day : 'numeric' , month : 'long' , year:'numeric'}) }}</p>
+
+<img src="{{ image }}" alt="Photo de profil" width="150" >
+
+<p>Langues Parlées</p>
+<ul>
+    <li>{{ Languages[0] }}</li>
+    <li>{{ Languages[1] }}</li>
+    <li>{{ Languages[2] }}</li>
+    <li>{{ Languages[3] }}</li>
+</ul>
+
+

@@ -1,0 +1,62 @@
+<h3>Exercice02 Complétion du profil - Two-Way Binding</h3>
+<main>
+    
+    <div class="box1">
+        <label>Nom</label>
+    <br>
+        <input type="text" [(ngModel)]="LastName" >
+        <br>
+        <br>
+        
+        <label>Prenom</label>
+        <br>
+        <input type="text" [(ngModel)]="FirstName" >
+        <br>
+        <br>
+
+        
+        <label>Date de Naissance</label>
+        <br>
+        <input type="date" [(ngModel)]="BirthDate" >
+        <br>
+        <br>
+    
+        <label>Genre :</label>
+        <br>
+        <select [(ngModel)]="Gender">
+            <option value="Homme">Homme</option>
+            <option value="Femme">Femme</option>
+            <option value="Autre">Autre</option>
+            
+        </select>
+        <br>
+        <br>
+        
+        <label>Langue : (plusieurs, separee par une virgule)</label>
+        <br>
+        <input type="text" [(ngModel)]="Languages" >
+        <br>
+        <br>
+        
+        <label>Image</label>
+        <br>
+        <input type="text" [(ngModel)]="image" >
+        <br>
+        <br>
+        
+    </div>
+    
+    <div class="box2">
+        
+        <h1>{{ Gender === 'Homme' ? 'Mr.' : Gender==='Femme' ? 'Mme.':' ' }}   {{ LastName }} {{ FirstName }}</h1> 
+        
+    <p> Contactez moi à {{ MailAdress }}</p>
+    <p> Ne le {{ BirthDate}}</p>
+    
+    <img src="{{ image }}" alt="Photo de profil" width="150" >
+    
+    <p>Langues Parlées</p>
+<p>{{ Languages  }}</p>
+</div>
+</main>
+
