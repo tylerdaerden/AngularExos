@@ -1,0 +1,20 @@
+<h3>Exercice 04 - Toggle password - Attribute Binding</h3>
+<p>Créer une application qui affiche un formulaire de connexion où l'utilisateur peut rendre visible son mot de passe ou
+    non.</p>
+
+<hr>
+<div class="d-block">
+    <label for="">Identifiant :</label>
+    <input type="text">
+
+    <label for="">Mot de passe :</label>
+    <input [type]="passwordType">
+
+    <label for="display">
+        <input type="checkbox" (change)="togglePassword()" [(ngModel)]="isChecked" id="display"> 
+        Afficher le mot de passe
+    </label>
+
+    <button>Connexion</button>
+
+</div>

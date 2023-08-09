@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularExo": {
+    "TF_202308_NETCore__Angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -39,7 +39,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-exo",
+            "outputPath": "dist/tf-202308-netcore--angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -52,9 +52,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -87,10 +90,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "AngularExo:build:production"
+              "browserTarget": "TF_202308_NETCore__Angular:build:production"
             },
             "development": {
-              "browserTarget": "AngularExo:build:development"
+              "browserTarget": "TF_202308_NETCore__Angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -98,7 +101,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AngularExo:build"
+            "browserTarget": "TF_202308_NETCore__Angular:build"
           }
         },
         "test": {

@@ -1,0 +1,37 @@
+<h3>exercice 08 - Générateur de formes - les directives de composants</h3>
+<br>
+<!--NgStyle-->
+<p> Créer une application qui permet de modifier les proprietés d'un quadrilatère.</p>
+<p>Largeur, hauteur, couleur, bordure,...</p>
+
+
+<!--NgClass-->
+<p>Permettre à l'utilisateur de transformer le quadrilatère en cercle. ( NgClass)</p>
+<br>
+<hr>
+
+
+
+<h6> Propriété du quadrilatère </h6>
+<br>
+<label>Hauteur {{ rangequad }} <input type="range" [min]="minquad" [max]="maxquad" [(ngModel)]="rangequad" ></label>
+<br><br>
+<label>Largeur {{ rangequad }}   <input type="range" [min]="minquad" [max]="maxquad" [(ngModel)]="rangequad" ></label>
+<br><br>
+<label>Cercle <input type="checkbox"> </label>
+
+<br><br><br>
+<h6> Propriété de la bordure </h6>
+<br>
+<label>Largeur {{ rangeborder }} <input type="range" [min]="minborder" [max]="maxborder" [(ngModel)]="rangeborder" ></label>
+<br><br>
+<label>Couleur  <input type="color"  > </label>
+<br><br>
+<label>Style {{ selectedStyle }}
+<select [(ngModel)]="selectedStyle" >
+    <option value="Groove">Groove</option>
+    <option value="Italic">Italic</option>
+    <option>Bold</option>
+</select>    
+
+</label>
