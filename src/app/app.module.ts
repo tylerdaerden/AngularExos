@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -42,6 +43,14 @@ import { Demo15Component } from './demos/demo15/demo15.component';
 import { Exercice15Component } from './exercices/exercice15/exercice15.component';
 import { Demo16Component } from './demos/demo16/demo16.component';
 import { Demo17Component } from './demos/demo17/demo17.component';
+import { Demo18Component } from './demos/demo18/demo18.component';
+import { Demo19Component } from './demos/demo19/demo19.component';
+import { Demo20Component } from './demos/demo20/demo20.component';
+import { Demo21Component } from './demos/demo21/demo21.component';
+import { AddComponent } from './demos/demo21/add/add.component';
+import { UpdateComponent } from './demos/demo21/update/update.component';
+import { Exercice21Component } from './exercices/exercice21/exercice21.component';
+
 
 @NgModule({
   declarations: [
@@ -85,11 +94,19 @@ import { Demo17Component } from './demos/demo17/demo17.component';
     Exercice15Component,
     Demo16Component,
     Demo17Component,
+    Demo18Component,
+    Demo19Component,
+    Demo20Component,
+    Demo21Component,
+    AddComponent,
+    UpdateComponent,
+    Exercice21Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, // Important pour le fonctionnement du routing
     FormsModule, // Important pour le fonctionnement du Two-Way Binding
+    HttpClientModule // Important pour la communication avec une API 
   ],
   providers: [],
   bootstrap: [AppComponent]

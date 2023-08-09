@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+// #region DemoImport
 import { Demo01Component } from './demos/demo01/demo01.component';
 import { Demo02Component } from './demos/demo02/demo02.component';
 import { Demo03Component } from './demos/demo03/demo03.component';
@@ -18,8 +19,13 @@ import { Demo14Component } from './demos/demo14/demo14.component';
 import { Demo15Component } from './demos/demo15/demo15.component';
 import { Demo16Component } from './demos/demo16/demo16.component';
 import { Demo17Component } from './demos/demo17/demo17.component';
+import { Demo18Component } from './demos/demo18/demo18.component';
+import { Demo19Component } from './demos/demo19/demo19.component';
+import { Demo20Component } from './demos/demo20/demo20.component';
+import { Demo21Component } from './demos/demo21/demo21.component';
 import { DemosComponent } from './demos/demos.component';
-
+// #endregion  
+// #region Exo Import
 import { Exercice01Component } from './exercices/exercice01/exercice01.component';
 import { Exercice02Component } from './exercices/exercice02/exercice02.component';
 import { Exercice03Component } from './exercices/exercice03/exercice03.component';
@@ -31,8 +37,9 @@ import { Exercice08Component } from './exercices/exercice08/exercice08.component
 import { Exercice09Component } from './exercices/exercice09/exercice09.component';
 import { Exercice11Component } from './exercices/exercice11/exercice11.component';
 import { Exercice15Component } from './exercices/exercice15/exercice15.component';
+import { Exercice21Component } from './exercices/exercice21/exercice21.component';
 import { ExercicesComponent } from './exercices/exercices.component';
-
+//#endregion
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';
 
@@ -58,7 +65,11 @@ const routes: Routes = [
       { path: 'demo14', component: Demo14Component },
       { path: 'demo15', component: Demo15Component },
       { path: 'demo16', component: Demo16Component },
-      { path: 'demo17', component: Demo17Component }
+      { path: 'demo17', component: Demo17Component },
+      { path: 'demo18', component: Demo18Component },
+      { path: 'demo19', component: Demo19Component },
+      { path: 'demo20', component: Demo20Component },
+      { path: 'demo21', component: Demo21Component }
 
     ]
   },
@@ -76,7 +87,8 @@ const routes: Routes = [
       { path: 'exo08', component: Exercice08Component },
       { path: 'exo09', component: Exercice09Component },
       { path: 'exo11', component: Exercice11Component },
-      { path: 'exo15', component: Exercice15Component }
+      { path: 'exo15', component: Exercice15Component },
+      { path: 'exo21', component: Exercice21Component }
     ]
   },
 
